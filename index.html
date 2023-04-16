@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 class="header" id="headeru">Calculator</h1>
+    <div class="container">
+        <h1 class="display" id="display"></h1>
+        <div class="row1">
+            <button class="ops" id="buttonss" onclick="AC()">AC</button>
+            <button class="ops" id="buttonss" onclick="del()">DEL</button>
+            <button class="ops" id="buttons" onclick="buttonsss()">%</button>
+            <button id="buttons1" onclick="button()" class="buttons">÷</button>
+        </div>
+        <div class="row2">
+            <button id="buttons2"  onclick="button2()">7</button>
+            <button id="buttons3"  onclick="button3()">8</button>
+            <button id="buttons4"  onclick="button4()">9</button>
+            <button class="asterisk" id="buttons"  onclick="button111()">*</button>
+        </div>
+        <div class="row3">
+            <button id="buttons5"  onclick="button5()">4</button>
+            <button id="buttons6"  onclick="button6()">5</button>
+            <button id="buttons7"  onclick="button7()">6</button>
+            <button id="buttons8"  onclick="button8()">-</button>
+        </div>
+        <div class="row4">
+            <button id="buttons9"  onclick="button9()">1</button>
+            <button id="buttons10"  onclick="button10()">2</button>
+            <button id="buttons11"  onclick="button11()">3</button>
+            <button id="buttons12"  onclick="button12()">+</button>
+        </div>
+        <div class="row5">
+            <button id="buttons13"  onclick="button13()">00</button>
+            <button id="buttons14" onclick="button14()">0</button>
+            <button id="buttons15" onclick="button15()">.</button>
+            <button class="equalBtn" id="buttonss" onclick="result()">=</button>
+        </div>
+    </div>
+    <script>
+       var display = document.getElementById("display");
+     function AC(){
+        display.innerHTML="";
+     }
+     function button15(){
+        display.innerHTML +=  ".";
+     }
+     function button14(){
+        display.innerHTML +=  "0";
+     }
+     function button13(){
+        display.innerHTML +=  "00";
+     }
+     function button12(){
+        display.innerHTML +=  "+";
+     }
+     function button11(){
+        display.innerHTML +=  "3";
+     }
+     function button10(){
+        display.innerHTML +=  "2";
+     }
+     function button9(){
+        display.innerHTML +=  "1";
+     }
+      function button8(){
+        display.innerHTML +=  "-";
+     }
+     function button7(){
+        display.innerHTML +=  "6";
+     }
+     function button6(){
+        display.innerHTML +=  "5";
+     } 
+     function button5(){
+        display.innerHTML +=  "4";
+     }
+     function button4(){
+        display.innerHTML +=  "9";
+     }
+     function button3(){
+        display.innerHTML +=  "8";
+     } 
+     function button2(){
+        display.innerHTML +=  "7";
+     }
+     function button(){
+        display.innerHTML +=  "/";
+     }
+     function buttonsss(){
+        display.innerHTML +=  "%";
+     }
+     function button111(){
+        display.innerHTML +=  "*";
+     }
+
+     function result(){
+        display.innerHTML = eval(document.getElementById("display").innerHTML);
+     }
+    </script>
+</body>
+</html>
