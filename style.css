@@ -40,25 +40,30 @@ button:hover {
       -ms-user-select: none;
           user-select: none;
   box-shadow: #0a0a0a 1px 1px 300px;
-  width:305px;
+  width: 305px;
 }
 
 .display {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   color: #fff;
   opacity: 0.75;
   -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   height: 60px;
   width: 290px;
   background-color: #0a0a0a;
   align-items: center;
   border-radius: 5px;
   padding-right: 5px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: inherit;
 }
 
 .equalBtn {
@@ -81,4 +86,7 @@ button:nth-of-type(4), .ops {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.header::first-letter {
+  font-size: 1.25em;
 }/*# sourceMappingURL=style.css.map */
